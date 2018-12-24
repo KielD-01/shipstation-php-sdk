@@ -1,0 +1,21 @@
+{
+    "name": "kield01/shipstation-php-sdk",
+    "type": "library",
+    "require": {
+        "fabpot/goutte": "^3.2",
+        "symfony/var-dumper": "^4.2",
+        "nesbot/carbon": "^2.8"
+    },
+    "authors": [
+        {
+            "name": "Roman Kozin",
+            "email": "romanko95.rk@gmail.com"
+        }
+    ],
+    "description": "",
+    "autoload": {
+        "psr-0": {
+            "KielD01\\ShipStation\\": "src/"
+        }
+    }
+}
