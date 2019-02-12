@@ -15,6 +15,7 @@ class ListPackages extends ShipStation
 
     /**
      * Returns a list of the packages for the specific carrier
+     * @link https://shipstation.docs.apiary.io/#reference/carriers/list-packages/list-packages
      *
      * @param string|null $carrierCode
      * @return \KielD01\ShipStation\Response

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: roman
- * Date: 2018-12-24
- * Time: 16:11
- */
 
 namespace KielD01\ShipStation\Models;
 

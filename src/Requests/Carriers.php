@@ -14,6 +14,9 @@ class Carriers extends ShipStation
 {
 
     /**
+     * Returns carriers list
+     * @link https://shipstation.docs.apiary.io/#reference/carriers/list-carriers/list-shipments-with-parameters
+     *
      * @return \KielD01\ShipStation\Response
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
@@ -28,6 +31,9 @@ class Carriers extends ShipStation
     }
 
     /**
+     * Returns a single carrier
+     * @link https://shipstation.docs.apiary.io/#reference/carriers/get-carrier/get-carrier
+     *
      * @param null $carrierCode
      * @return int|\KielD01\ShipStation\Response
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -46,6 +52,9 @@ class Carriers extends ShipStation
     }
 
     /**
+     * Adding a funds to a carrier
+     * @link https://shipstation.docs.apiary.io/#reference/carriers/add-funds/add-funds
+     *
      * @param null|string $carrierCode
      * @param float $amount
      */

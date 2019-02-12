@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: roman
- * Date: 2018-12-24
- * Time: 16:00
- */
 
 namespace KielD01\ShipStation\Requests;
 
@@ -22,13 +16,17 @@ class Shipments extends ShipStation
 {
 
     /**
+     * Returns list of the Rates for Carriers
+     * @link https://shipstation.docs.apiary.io/#reference/shipments/get-rates/get-rates
+     *
      * @param $carrierCode
      * @param $toPostalCode
      * @param $fromPostalCode
      * @param Weight $weight
-     * @param null $toState
-     * @param null $toCountry
-     * @param null $toCity
+     * @param null|string $toCountry
+     * @param null|string $toState
+     * @param null|string $toCity
+     * @param null|string $packageCode
      * @param Dimensions|null $dimensions
      * @param null $confirmation
      * @param bool $residental
@@ -37,7 +35,7 @@ class Shipments extends ShipStation
      */
     public function getRates(
         $carrierCode, $toPostalCode, $fromPostalCode, Weight $weight,
-        $toCountry, $toState = null, $toCity = null,
+        $toCountry, $toState = null, $toCity = null, $packageCode = null,
         Dimensions $dimensions = null, $confirmation = null, $residental = false
     )
     {
@@ -57,11 +55,10 @@ class Shipments extends ShipStation
                 compact(
                     'carrierCode', 'toPostalCode', 'fromPostalCode',
                     'weight', 'toState', 'toCountry', 'toCity', 'dimensions',
-                    'confirmation', 'residental'
+                    'confirmation', 'residental', 'packageCode'
                 )
             )
         );
-
 
         return $this->send(function ($item) {
             return new Shipment($item);
