@@ -5,6 +5,7 @@ namespace KielD01\ShipStation\Traits;
 /**
  * Trait MagicConstructor
  * @package KielD01\ShipStation\Traits
+ * @property object model
  */
 trait MagicConstructor
 {
@@ -14,6 +15,9 @@ trait MagicConstructor
      */
     public function __construct($model = [])
     {
+        $class = get_class($this);
+        $this->model = new $class;
+
         array_walk($model, function ($value, $key) {
             $this->__set($key, $value);
         });

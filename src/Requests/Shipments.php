@@ -11,7 +11,6 @@ namespace KielD01\ShipStation\Requests;
 
 use KielD01\ShipStation\Models\Shipment;
 use KielD01\ShipStation\ShipStation;
-use KielD01\ShipStation\Traits\MagicConstructor;
 use KielD01\ShipStation\Values\Dimensions;
 use KielD01\ShipStation\Values\Weight;
 
@@ -21,7 +20,6 @@ use KielD01\ShipStation\Values\Weight;
  */
 class Shipments extends ShipStation
 {
-    use MagicConstructor;
 
     /**
      * @param $carrierCode

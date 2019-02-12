@@ -2,10 +2,9 @@
 
 namespace KielD01\ShipStation\Requests;
 
-use KielD01\ShipStation\Models\Carrier;
 use KielD01\ShipStation\MessageBag;
+use KielD01\ShipStation\Models\Carrier;
 use KielD01\ShipStation\ShipStation;
-use KielD01\ShipStation\Traits\MagicConstructor;
 
 /**
  * Class Carriers
@@ -13,7 +12,6 @@ use KielD01\ShipStation\Traits\MagicConstructor;
  */
 class Carriers extends ShipStation
 {
-    use MagicConstructor;
 
     /**
      * @return \KielD01\ShipStation\Response
