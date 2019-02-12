@@ -58,7 +58,8 @@ abstract class ShipStation
         'account.list.tags' => 'accounts/listtags',
         'carriers.list' => '/carriers',
         'carrier.get' => '/carriers/getcarrier',
-        'shipments.rates' => '/shipments/getrates'
+        'shipments.rates' => '/shipments/getrates',
+        'list.packages' => '/carriers/listpackages'
     ];
 
     /** @var Client */
