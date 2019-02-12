@@ -14,7 +14,7 @@ final class Countries
     /**
      * Returns list of countries
      *
-     * @return array
+     * @return Country[]
      */
     public static function list()
     {
